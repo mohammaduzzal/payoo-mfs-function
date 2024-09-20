@@ -12,7 +12,7 @@
         <div class="mockup-phone">
             <div class="camera"></div>
             <div class="display">
-              <div class="artboard artboard-demo phone-1">
+              <div class="artboard artboard-demo phone-3">
                 <!-- money remain -->
                 <div class="stats shadow">
                     <div class="stat">
@@ -26,10 +26,11 @@
                 <div>
                     <button id="add-money-first" class="btn btn-lg">Add Money</button>
                     <button id="cash-out-first" class="btn btn-lg">Cash Out</button>
+                    <button id="transaction-first" class="btn btn-lg mt-2">Transaction</button>
                   </div>
                   <div class="divider"></div>
                   <!-- add money start -->
-                  <div id="add-money-div" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
+                  <div id="add-money-div" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -51,7 +52,7 @@
                   </div>
                   <!-- add money end -->
                    <!-- cash out start -->
-                   <div id="cash-out-div" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                   <div id="cash-out-div" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -72,6 +73,11 @@
                     </form>
                   </div>
                    <!-- cash out end -->
+                    <!-- transaction start  -->
+                     <div id="transaction-div" class="hidden">
+                      <p class="text-3xl">transaction history</p>
+                     </div>
+                    <!-- transaction end -->
               </div>
         
             
@@ -81,5 +87,6 @@
       <script src="./js/utilities.js"></script>
       <script src="./js/add-money.js"></script>
       <script src="./js/cash-out.js"></script>
+      <script src="./js/feature.js"></script>
 </body>
 </html>
