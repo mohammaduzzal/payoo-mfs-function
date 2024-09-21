@@ -12,3 +12,9 @@ document.getElementById('transaction-first').addEventListener('click', function(
 document.getElementById('transfer-first').addEventListener('click', function(){
     getSectionById('transfer-money-div');
 })
+document.getElementById('pay-first').addEventListener('click', function(){
+    getSectionById('pay-bill-div');
+})
+document.getElementById('offer-first').addEventListener('click', function(){
+    getSectionById('coupon-div');
+})

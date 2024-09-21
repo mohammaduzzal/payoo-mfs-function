@@ -26,9 +26,13 @@
                 <div>
                     <button id="add-money-first" class="btn btn-lg">Add Money</button>
                     <button id="cash-out-first" class="btn btn-lg">Cash Out</button>
-                    <button id="transaction-first" class="btn btn-lg mt-2">Transaction</button>
+                   
                     <button id="transfer-first" class="btn btn-lg mt-2">Transfer Money</button>
-                  </div>
+                    <button id="pay-first" class="btn btn-lg mt-2">Pay Bill</button>
+                    <button id="offer-first" class="btn btn-lg mt-2">Get Offer</button>
+                
+                  <button id="transaction-first" class="btn btn-lg mt-2">Transaction</button>
+                </div>
                   <div class="divider"></div>
                   <!-- add money start -->
                   <div id="add-money-div" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -103,6 +107,75 @@
                       </form>
                     </div>
                      <!-- transfer money end -->
+                      <!-- pay-bill start -->
+                      <div id="pay-bill-div" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <span class="label-text mb-2">Select to Pay</span>
+                            <select id="select-bank" class="select select-bordered w-full max-w-xs">
+                              <option disabled selected>Select bank</option>
+                              <option>Nagad</option>
+                              <option>Bikash</option>
+                              <option>Rocket</option>
+                              <option>sure cash</option>
+                              <option>paypal</option>
+                            </select>
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Account number</span>
+                            </label>
+                            <input id="account-number" type="text" placeholder="enter account number" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Amount to pay</span>
+                            </label>
+                            <input id="pay-amount" type="text" placeholder="add amount to pay" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">pin number</span>
+                            </label>
+                            <input id="pay-pin-input" type="password" placeholder="password" class="input input-bordered" autocomplete="off" required />
+                           
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="pay-btn" class="btn btn-primary">Pay Now</button>
+                          </div>
+                        </form>
+                      </div>
+
+
+                      <!-- pay-bill end -->
+
+
+                      <!-- coupon start -->
+
+
+                      <div id="coupon-div" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
+                        <form class="card-body">
+                         
+                          <p class="text-2xl label-text mb-2">Get Bonus</p>
+                         
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Enter Bonus Coupon</span>
+                            </label>
+                            <input id="coupon-input" type="text" placeholder="Enter your coupon" class="input input-bordered" required />
+                           
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="coupon-btn" class="btn btn-primary">Get Bonus</button>
+                          </div>
+                        </form>
+                      </div>
+                      <!-- coupon end -->
+
+
+
+
+
                        <!-- transaction start  -->
                      <div id="transaction-div" class="hidden">
                       <p class="text-3xl text-center">transaction history</p>
@@ -123,5 +196,7 @@
       <script src="./js/cash-out.js"></script>
       <script src="./js/feature.js"></script>
       <script src="./js/transfer.js"></script>
+      <script src="./js/pay-bill.js"></script>
+      <script src="./js/coupon.js"></script>
 </body>
 </html>
