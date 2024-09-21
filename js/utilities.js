@@ -14,6 +14,7 @@ function getSectionById(id){
     document.getElementById('add-money-div').classList.add('hidden');
     document.getElementById('cash-out-div').classList.add('hidden');
     document.getElementById('transaction-div').classList.add('hidden')
+    document.getElementById('transfer-money-div').classList.add('hidden')
 
     // showing section
     document.getElementById(id).classList.remove('hidden')

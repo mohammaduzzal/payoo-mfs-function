@@ -9,3 +9,6 @@ document.getElementById('cash-out-first').addEventListener('click', function(){
 document.getElementById('transaction-first').addEventListener('click', function(){
     getSectionById('transaction-div');
 })
+document.getElementById('transfer-first').addEventListener('click', function(){
+    getSectionById('transfer-money-div');
+})
