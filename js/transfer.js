@@ -17,5 +17,15 @@ document.getElementById('sent-btn').addEventListener('click', function(event){
 
         const newBalance = balance - transferAmountInput
         document.getElementById('present-balance').innerText = newBalance
+
+
+        // transaction history
+        const p = document.createElement('p')
+        p.classList.add('bg-pink-300')
+        p.innerText = `sent: ${transferAmountInput} tk. new balance:${newBalance}`
+        document.getElementById('transaction-container').appendChild(p)
+    }
+    else{
+        alert('wrong pin baby.try harder love')
     }
 })
